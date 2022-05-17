@@ -12,6 +12,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 import { MenuComponent } from './components/admin/menu/menu.component';
 import { AdmProductsComponent } from './components/admin/adm-products/adm-products.component';
+import { MiddleComponentComponent } from './components/middle-component/middle-component.component';
 
 const appRoutes: Routes = [
   { path: 'cart', component: CartComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     CartComponent,
     DashboardComponent,
     MenuComponent,
-    AdmProductsComponent
+    AdmProductsComponent,
+    MiddleComponentComponent
   ],
   imports: [
     BrowserModule,
