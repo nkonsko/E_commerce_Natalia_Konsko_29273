@@ -1,5 +1,29 @@
 .p-0{
-    width: 100%;
-    height: 20px;
     padding: 0px;
+}
+
+.glownyKontenerFlex{
+  display: flex;
+}
+
+.kontenerPanelAdministratora{
+  height: 200px;
+  width: 33%;
+  text-align: center;
+}
+
+.kontenerSzukajka{
+  height: 200px;
+  width: 34%;
+  text-align: center;
+}
+
+.kontenerPanelUzytkownika{
+  height: 200px;
+  width: 33%;
+  text-align: center;
+}
+
+.f16{
+  font-size: 30px;
 }

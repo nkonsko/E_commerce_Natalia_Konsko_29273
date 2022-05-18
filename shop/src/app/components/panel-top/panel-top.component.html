@@ -1,17 +1,24 @@
-<div class="p-0" style="height: auto;">
-    <div style="display: flex;flex-direction: row;">
-        <h2>Sklep z softłerem (TOP PANEL)</h2>
-    </div>
+<div class="p-0 glownyKontenerFlex">
 
-    <button routerLink="/adm_dashboard">Panel Administratora</button>
+  <div class="kontenerPanelAdministratora">
+    <button class="f16" routerLink="/adm_dashboard">Panel Administratora</button>
+  </div>
 
+
+  <div class="kontenerSzukajka">
     <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+      <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+      <button  class="f16" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj
+        Produktu</button>
     </div>
+  </div>
+
+  <div class="kontenerPanelUzytkownika">
     <div>
-        <button id="cartBtn" routerLink="/cart">
-            {{getCartQuanity()}}
-        </button>
+      <button id="cartBtn" class="f16" routerLink="/cart">
+        Panel Uzytkownika
+      </button>
     </div>
+  </div>
+
 </div>
